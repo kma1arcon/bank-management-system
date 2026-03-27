@@ -10,11 +10,12 @@ class Account:
         return self.balance
     
     def withdraw(self, amount):
+        if amount <= 0:
+            return "Invalid withdrawal amount"
         if amount > self.balance:
             return "Insufficient funds"
-        else:
-            self.balance -= amount
-            return self.balance
+        self.balance -= amount
+        return self.balance
 
     def check_balance(self):
         return self.balance
