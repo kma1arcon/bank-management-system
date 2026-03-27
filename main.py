@@ -16,3 +16,9 @@ class Account:
 
     def check_balance(self):
         print(f"Current balance: {self.balance}")
+
+    def validate_deposit(self, amount):
+        if amount < 0:
+            print("Invalid deposit amount")
+            return False
+        return True
