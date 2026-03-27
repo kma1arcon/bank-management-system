@@ -22,3 +22,11 @@ class Account:
             print("Invalid deposit amount")
             return False
         return True
+    
+
+new_account = Account("John Doe", 1000)
+new_account.check_balance()
+new_account.deposit(500)
+new_account.withdraw(200)
+new_account.withdraw(1500)
+new_account.validate_deposit(-100)
