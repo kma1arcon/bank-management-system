@@ -1,0 +1,13 @@
+$kind: http-request
+description: Retrieve a user object using the ID specified in the request path.
+url: https://api.notion.com/v1/comments?block_id={{BLOCK_ID}}&page_size=100
+method: GET
+headers:
+  Notion-Version: "{{NOTION_VERSION}}"
+queryParams:
+  block_id: "{{BLOCK_ID}}"
+  page_size: "100"
+body:
+  type: urlencoded
+examples: ./.resources/Retrieve comments.resources/examples
+order: 1000

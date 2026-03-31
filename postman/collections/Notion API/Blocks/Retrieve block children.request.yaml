@@ -1,0 +1,11 @@
+$kind: http-request
+url: https://api.notion.com/v1/blocks/:id/children?page_size=100
+method: GET
+headers:
+  Notion-Version: "{{NOTION_VERSION}}"
+queryParams:
+  page_size: "100"
+pathVariables:
+  id: "{{PAGE_ID}}"
+examples: ./.resources/Retrieve block children.resources/examples
+order: 1000

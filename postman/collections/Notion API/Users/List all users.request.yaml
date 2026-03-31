@@ -1,0 +1,8 @@
+$kind: http-request
+description: Returns a paginated list of user objects for a workspace
+url: https://api.notion.com/v1/users
+method: GET
+headers:
+  Notion-Version: "{{NOTION_VERSION}}"
+examples: ./.resources/List all users.resources/examples
+order: 2000

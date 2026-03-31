@@ -1,0 +1,14 @@
+$kind: http-request
+name: Deposit
+method: POST
+url: '{{baseUrl}}/deposit'
+order: 4000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "amount": 500
+    }

@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Balance
+method: GET
+url: '{{baseUrl}}/balance'
+order: 2000

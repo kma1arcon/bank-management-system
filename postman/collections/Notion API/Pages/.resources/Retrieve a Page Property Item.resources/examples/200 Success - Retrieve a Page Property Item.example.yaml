@@ -1,0 +1,176 @@
+$kind: http-example
+request:
+  url: https://api.notion.com/v1/pages/672b014a26264ada9211fb3613d07ae2/properties/)Y7%22
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: Date
+      value: Wed, 02 Mar 2022 05:31:24 GMT
+    - key: Content-Type
+      value: application/json; charset=utf-8
+    - key: Transfer-Encoding
+      value: chunked
+    - key: Connection
+      value: keep-alive
+    - key: Set-Cookie
+      value: notion_browser_id=b52020af-77f5-4a1a-b45c-db6de78345b8;
+        Domain=www.notion.so; Path=/; Expires=Thu, 02 Mar 2023 05:31:24 GMT;
+        Secure
+    - key: Set-Cookie
+      value: notion_check_cookie_consent=false; Domain=www.notion.so; Path=/;
+        Expires=Thu, 03 Mar 2022 05:31:24 GMT; Secure
+    - key: X-DNS-Prefetch-Control
+      value: off
+    - key: X-Frame-Options
+      value: SAMEORIGIN
+    - key: Strict-Transport-Security
+      value: max-age=5184000; includeSubDomains
+    - key: X-Download-Options
+      value: noopen
+    - key: X-Content-Type-Options
+      value: nosniff
+    - key: X-XSS-Protection
+      value: 1; mode=block
+    - key: Referrer-Policy
+      value: same-origin
+    - key: Content-Security-Policy
+      value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gist.github.com
+        https://apis.google.com https://cdn.amplitude.com
+        https://api.amplitude.com https://hkfxbbdzib.notion.so
+        https://widget.intercom.io https://js.intercomcdn.com
+        https://logs-01.loggly.com https://cdn.segment.com
+        https://analytics.pgncs.notion.so https://o324374.ingest.sentry.io
+        https://checkout.stripe.com https://js.stripe.com
+        https://embed.typeform.com https://admin.typeform.com
+        https://public.profitwell.com js.sentry-cdn.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://cdn.syndication.twimg.com; connect-src 'self'
+        https://msgstore.www.notion.so wss://msgstore.www.notion.so
+        ws://localhost:* ws://127.0.0.1:*
+        https://notion-emojis.s3-us-west-2.amazonaws.com
+        https://s3-us-west-2.amazonaws.com https://s3.us-west-2.amazonaws.com
+        https://notion-production-snapshots-2.s3.us-west-2.amazonaws.com https:
+        http: https://cdn.amplitude.com https://api.amplitude.com
+        https://hkfxbbdzib.notion.so https://api.embed.ly
+        https://js.intercomcdn.com https://api-iam.intercom.io
+        wss://nexus-websocket-a.intercom.io https://logs-01.loggly.com
+        https://cdn.segment.com https://api.segment.io
+        https://analytics.pgncs.notion.so https://api.pgncs.notion.so
+        https://o324374.ingest.sentry.io https://checkout.stripe.com
+        https://js.stripe.com https://cdn.contentful.com
+        https://preview.contentful.com https://images.ctfassets.net
+        https://www2.profitwell.com https://tracking.chilipiper.com
+        https://api.chilipiper.com https://api.unsplash.com
+        https://boards-api.greenhouse.io https://api.statuspage.io
+        https://pgncd.notion.so https://api.statsig.com; font-src 'self' data:
+        https://cdnjs.cloudflare.com https://js.intercomcdn.com; img-src 'self'
+        data: blob: https: https://platform.twitter.com
+        https://syndication.twitter.com https://pbs.twimg.com
+        https://ton.twimg.com; style-src 'self' 'unsafe-inline'
+        https://cdnjs.cloudflare.com https://github.githubassets.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://ton.twimg.com; frame-src https: http:; media-src https: http:"
+    - key: X-Content-Security-Policy
+      value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gist.github.com
+        https://apis.google.com https://cdn.amplitude.com
+        https://api.amplitude.com https://hkfxbbdzib.notion.so
+        https://widget.intercom.io https://js.intercomcdn.com
+        https://logs-01.loggly.com https://cdn.segment.com
+        https://analytics.pgncs.notion.so https://o324374.ingest.sentry.io
+        https://checkout.stripe.com https://js.stripe.com
+        https://embed.typeform.com https://admin.typeform.com
+        https://public.profitwell.com js.sentry-cdn.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://cdn.syndication.twimg.com; connect-src 'self'
+        https://msgstore.www.notion.so wss://msgstore.www.notion.so
+        ws://localhost:* ws://127.0.0.1:*
+        https://notion-emojis.s3-us-west-2.amazonaws.com
+        https://s3-us-west-2.amazonaws.com https://s3.us-west-2.amazonaws.com
+        https://notion-production-snapshots-2.s3.us-west-2.amazonaws.com https:
+        http: https://cdn.amplitude.com https://api.amplitude.com
+        https://hkfxbbdzib.notion.so https://api.embed.ly
+        https://js.intercomcdn.com https://api-iam.intercom.io
+        wss://nexus-websocket-a.intercom.io https://logs-01.loggly.com
+        https://cdn.segment.com https://api.segment.io
+        https://analytics.pgncs.notion.so https://api.pgncs.notion.so
+        https://o324374.ingest.sentry.io https://checkout.stripe.com
+        https://js.stripe.com https://cdn.contentful.com
+        https://preview.contentful.com https://images.ctfassets.net
+        https://www2.profitwell.com https://tracking.chilipiper.com
+        https://api.chilipiper.com https://api.unsplash.com
+        https://boards-api.greenhouse.io https://api.statuspage.io
+        https://pgncd.notion.so https://api.statsig.com; font-src 'self' data:
+        https://cdnjs.cloudflare.com https://js.intercomcdn.com; img-src 'self'
+        data: blob: https: https://platform.twitter.com
+        https://syndication.twitter.com https://pbs.twimg.com
+        https://ton.twimg.com; style-src 'self' 'unsafe-inline'
+        https://cdnjs.cloudflare.com https://github.githubassets.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://ton.twimg.com; frame-src https: http:; media-src https: http:"
+    - key: X-WebKit-CSP
+      value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gist.github.com
+        https://apis.google.com https://cdn.amplitude.com
+        https://api.amplitude.com https://hkfxbbdzib.notion.so
+        https://widget.intercom.io https://js.intercomcdn.com
+        https://logs-01.loggly.com https://cdn.segment.com
+        https://analytics.pgncs.notion.so https://o324374.ingest.sentry.io
+        https://checkout.stripe.com https://js.stripe.com
+        https://embed.typeform.com https://admin.typeform.com
+        https://public.profitwell.com js.sentry-cdn.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://cdn.syndication.twimg.com; connect-src 'self'
+        https://msgstore.www.notion.so wss://msgstore.www.notion.so
+        ws://localhost:* ws://127.0.0.1:*
+        https://notion-emojis.s3-us-west-2.amazonaws.com
+        https://s3-us-west-2.amazonaws.com https://s3.us-west-2.amazonaws.com
+        https://notion-production-snapshots-2.s3.us-west-2.amazonaws.com https:
+        http: https://cdn.amplitude.com https://api.amplitude.com
+        https://hkfxbbdzib.notion.so https://api.embed.ly
+        https://js.intercomcdn.com https://api-iam.intercom.io
+        wss://nexus-websocket-a.intercom.io https://logs-01.loggly.com
+        https://cdn.segment.com https://api.segment.io
+        https://analytics.pgncs.notion.so https://api.pgncs.notion.so
+        https://o324374.ingest.sentry.io https://checkout.stripe.com
+        https://js.stripe.com https://cdn.contentful.com
+        https://preview.contentful.com https://images.ctfassets.net
+        https://www2.profitwell.com https://tracking.chilipiper.com
+        https://api.chilipiper.com https://api.unsplash.com
+        https://boards-api.greenhouse.io https://api.statuspage.io
+        https://pgncd.notion.so https://api.statsig.com; font-src 'self' data:
+        https://cdnjs.cloudflare.com https://js.intercomcdn.com; img-src 'self'
+        data: blob: https: https://platform.twitter.com
+        https://syndication.twitter.com https://pbs.twimg.com
+        https://ton.twimg.com; style-src 'self' 'unsafe-inline'
+        https://cdnjs.cloudflare.com https://github.githubassets.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://ton.twimg.com; frame-src https: http:; media-src https: http:"
+    - key: ETag
+      value: W/"9b-jhhW07EAsEXZSfnBY3CcGFH2Moo"
+    - key: Vary
+      value: Accept-Encoding
+    - key: CF-Cache-Status
+      value: DYNAMIC
+    - key: Expect-CT
+      value: max-age=604800,
+        report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+    - key: Server
+      value: cloudflare
+    - key: CF-RAY
+      value: 6e57bef43f860627-IAD
+    - key: Content-Encoding
+      value: gzip
+  body:
+    type: json
+    content: |-
+      {
+          "object": "property_item",
+          "type": "select",
+          "select": {
+              "id": "5c944de7-3f4b-4567-b3a1-fa2c71c540b6",
+              "name": "⭐️⭐️⭐️⭐️⭐️",
+              "color": "default"
+          }
+      }
+order: 1000

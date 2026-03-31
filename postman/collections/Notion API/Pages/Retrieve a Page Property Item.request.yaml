@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://api.notion.com/v1/pages/:page_id/properties/:property_id
+method: GET
+pathVariables:
+  page_id: "{{PAGE_ID}}"
+  property_id: ""
+examples: ./.resources/Retrieve a Page Property Item.resources/examples
+order: 6000

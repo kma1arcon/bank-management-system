@@ -1,0 +1,18 @@
+$kind: http-request
+url: https://api.notion.com/v1/search
+method: POST
+headers:
+  Content-Type: application/json
+  Notion-Version: "{{NOTION_VERSION}}"
+body:
+  type: text
+  content: |-
+    {
+        "query": "Media Article",
+        "sort": {
+            "direction": "ascending",
+            "timestamp": "last_edited_time"
+        }
+    }
+examples: ./.resources/Search.resources/examples
+order: 1000

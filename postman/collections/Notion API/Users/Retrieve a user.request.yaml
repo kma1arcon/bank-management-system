@@ -1,0 +1,12 @@
+$kind: http-request
+description: Retrieve a user object using the ID specified in the request path.
+url: https://api.notion.com/v1/users/:id
+method: GET
+headers:
+  Notion-Version: "{{NOTION_VERSION}}"
+pathVariables:
+  id: "{{USER_ID}}"
+body:
+  type: urlencoded
+examples: ./.resources/Retrieve a user.resources/examples
+order: 1000

@@ -1,0 +1,22 @@
+$kind: http-request
+description: This endpoint allows you to update block content. [See Full
+  Documentation](https://developers.notion.com/reference/update-a-block)
+url: https://api.notion.com/v1/blocks/:id
+method: PATCH
+headers:
+  Notion-Version: "{{NOTION_VERSION}}"
+pathVariables:
+  id: "{{BLOCK_ID}}"
+body:
+  type: json
+  content: |-
+    {
+        "paragraph": {
+            "rich_text": [{
+                "type": "text", 
+                "text": { "content": "hello to you"}
+            }]
+        }
+    }
+examples: ./.resources/Update a block.resources/examples
+order: 3000

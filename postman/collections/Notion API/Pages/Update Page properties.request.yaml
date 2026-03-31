@@ -1,0 +1,25 @@
+$kind: http-request
+description: "Updates a page by setting the values of any properties specified
+  in the JSON body of the request. Properties not updated via parameters will
+  remain unchanged. "
+url: https://api.notion.com/v1/pages/:id
+method: PATCH
+headers:
+  Content-Type: application/json
+  Notion-Version: "{{NOTION_VERSION}}"
+pathVariables:
+  id: "{{PAGE_ID}}"
+body:
+  type: text
+  content: |-
+    {
+        "properties": {
+            "Status": {
+                "select": {
+                    "name": "Reading"
+                }
+            }
+        }
+    }
+examples: ./.resources/Update Page properties.resources/examples
+order: 4000

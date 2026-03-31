@@ -1,0 +1,15 @@
+$kind: http-request
+description: "Retrieves a Page object using the ID in the request path. This
+  endpoint exposes page properties, not page content. "
+url: https://api.notion.com/v1/pages/:id
+method: GET
+headers:
+  - key: Notion-Version
+    value: "{{NOTION_VERSION}}"
+  - key: ""
+    value: ""
+    disabled: true
+pathVariables:
+  id: "{{PAGE_ID}}"
+examples: ./.resources/Retrieve a Page.resources/examples
+order: 3000

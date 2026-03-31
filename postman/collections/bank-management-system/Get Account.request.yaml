@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Account
+method: GET
+url: '{{baseUrl}}/account'
+order: 3000

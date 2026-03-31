@@ -1,0 +1,143 @@
+$kind: http-example
+request:
+  url: https://api.notion.com/v1/comments
+  method: POST
+  headers:
+    Content-Type: application/json
+    Notion-Version: "{{NOTION_VERSION}}"
+  body:
+    type: text
+    content: |-
+      {
+      	"parent": {
+      		"page_id": "5c6a28216bb14a7eb6e1c50111515c3d"
+      	},
+      	"rich_text": [
+      		{
+      			"text": {
+      				"content": "hello hello"
+      			}
+      		},
+      		{
+      			"mention": {
+      				"user": {
+      					"object": "user",
+      					"id": "952f41bb-da96-4d36-9c2e-74924eee8ef1"
+      				}
+      			}
+      		}
+      	]
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Security-Policy: "script-src 'self' 'unsafe-inline' 'unsafe-eval'
+      https://gist.github.com https://apis.google.com https://www.google.com
+      https://www.gstatic.com https://cdn.amplitude.com
+      https://api.amplitude.com https://hkfxbbdzib.notion.so
+      https://widget.intercom.io https://js.intercomcdn.com
+      https://static.zdassets.com https://api.smooch.io\t
+      https://logs-01.loggly.com https://cdn.segment.com
+      https://analytics.pgncs.notion.so https://o324374.ingest.sentry.io
+      https://checkout.stripe.com https://js.stripe.com
+      https://embed.typeform.com https://admin.typeform.com
+      https://public.profitwell.com js.sentry-cdn.com https://js.chilipiper.com
+      https://platform.twitter.com https://cdn.syndication.twimg.com
+      www.googletagmanager.com https://www.googleadservices.com
+      https://googleads.g.doubleclick.net https://api-v2.mutinyhq.io
+      https://client-registry.mutinycdn.com https://client.mutinycdn.com
+      https://user-data.mutinycdn.com http://localhost:3003
+      http://0.0.0.0:3003;connect-src 'self' http://localhost:3001
+      ws://localhost:3001 ws://localhost:* ws://127.0.0.1:*
+      https://notion-emojis.s3-us-west-2.amazonaws.com
+      https://s3-us-west-2.amazonaws.com https://s3.us-west-2.amazonaws.com
+      https://notion-local-snapshots-2.s3.us-west-2.amazonaws.com
+      https://cdn.amplitude.com https://api.amplitude.com
+      https://hkfxbbdzib.notion.so http://localhost:3000 https://api.embed.ly
+      https://js.intercomcdn.com https://api-iam.intercom.io
+      https://uploads.intercomcdn.com wss://nexus-websocket-a.intercom.io
+      https://ekr.zdassets.com https://ekr.zendesk.com\t
+      https://makenotion.zendesk.com\t https://api.smooch.io\t
+      wss://api.smooch.io\t https://logs-01.loggly.com https://cdn.segment.com
+      https://api.segment.io https://analytics.pgncs.notion.so
+      https://api.pgncs.notion.so https://o324374.ingest.sentry.io
+      https://checkout.stripe.com https://js.stripe.com
+      https://cdn.contentful.com https://preview.contentful.com
+      https://images.ctfassets.net https://www2.profitwell.com
+      https://tracking.chilipiper.com https://api.chilipiper.com
+      https://api.unsplash.com https://boards-api.greenhouse.io
+      https://www.googleadservices.com https://googleads.g.doubleclick.net
+      https://region1.google-analytics.com https://region1.analytics.google.com
+      https://www.google-analytics.com https://api-v2.mutinyhq.io
+      https://client-registry.mutinycdn.com https://client.mutinycdn.com
+      https://user-data.mutinycdn.com https://api.statuspage.io
+      https://pgncd.notion.so https://api.statsig.com https://statsigapi.net
+      http://localhost:3003 ws://localhost:3003
+      ws://*.pages.local.notion.co:3003 http://0.0.0.0:3003
+      ws://0.0.0.0:3003;font-src 'self' data: https://cdnjs.cloudflare.com
+      https://js.intercomcdn.com http://localhost:3003
+      http://0.0.0.0:3003;img-src 'self' data: blob: https:
+      https://platform.twitter.com https://syndication.twitter.com
+      https://pbs.twimg.com https://ton.twimg.com
+      https://region1.google-analytics.com https://region1.analytics.google.com
+      http://localhost:3003 http://0.0.0.0:3003;style-src 'self' 'unsafe-inline'
+      https://cdnjs.cloudflare.com https://github.githubassets.com
+      https://js.chilipiper.com https://platform.twitter.com
+      https://ton.twimg.com http://localhost:3003 http://0.0.0.0:3003;frame-src
+      https: http:;media-src https: http:"
+    X-DNS-Prefetch-Control: off
+    X-Frame-Options: SAMEORIGIN
+    Strict-Transport-Security: max-age=5184000; includeSubDomains
+    X-Download-Options: noopen
+    X-Content-Type-Options: nosniff
+    X-Permitted-Cross-Domain-Policies: none
+    Referrer-Policy: same-origin
+    X-XSS-Protection: "0"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "940"
+    ETag: W/"3ac-FxFX1g8QlNhF6Pt6zjnEfIMlXcs"
+    Vary: Accept-Encoding
+    Date: Fri, 15 Jul 2022 20:21:42 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: >-
+      {
+          "object": "comment",
+          "id": "6cd52483-6d55-4f8a-a724-4adb1c17ed43",
+          "parent": {
+              "type": "block_id",
+              "block_id": "5d4ca33c-d6b7-4675-93d9-84b70af45d1c"
+          },
+          "discussion_id": "ce18f8c6-ef2a-427f-b416-43531fc7c117",
+          "created_time": "2022-07-18T21:48:00.000Z",
+          "last_edited_time": "2022-07-18T21:48:00.000Z",
+          "created_by": {
+              "object": "user",
+              "id": "e450a39e-9051-4d36-bc4e-8581611fc592"
+          },
+          "rich_text": [
+              {
+                  "type": "text",
+                  "text": {
+                      "content": "https://www.healthline.com/nutrition/10-proven-benefits-of-kale",
+                      "link": {
+                          "url": "https://www.healthline.com/nutrition/10-proven-benefits-of-kale"
+                      }
+                  },
+                  "annotations": {
+                      "bold": false,
+                      "italic": false,
+                      "strikethrough": false,
+                      "underline": false,
+                      "code": false,
+                      "color": "default"
+                  },
+                  "plain_text": "https://www.healthline.com/nutrition/10-proven-benefits-of-kale",
+                  "href": "https://www.healthline.com/nutrition/10-proven-benefits-of-kale"
+              }
+          ]
+      }
+order: 1000

@@ -1,0 +1,14 @@
+# Use this workspace to collaborate
+workspace:
+  id: f5f2dd44-3d38-4632-8fc4-f4a0fbe1c057
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+cloudResources:
+  collections:
+    ../postman/collections/Notion API: 23175808-d469f231-58dd-4cfc-98e6-cf34fed8d2ef
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

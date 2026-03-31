@@ -1,0 +1,25 @@
+$kind: http-request
+url: https://api.notion.com/v1/comments
+method: POST
+headers:
+  Content-Type: application/json
+  Notion-Version: "{{NOTION_VERSION}}"
+body:
+  type: text
+  content: >-
+    {
+        "discussion_id": "{{DISCUSSION_ID}}",
+        "rich_text": [
+            {
+                "text": {
+                    "content": "https://www.healthline.com/nutrition/10-proven-benefits-of-kale",
+                    "link": {
+                        "type": "url",
+                        "url": "https://www.healthline.com/nutrition/10-proven-benefits-of-kale"
+                    }
+                }
+            }
+        ]
+    }
+examples: ./.resources/Add comment to discussion.resources/examples
+order: 3000

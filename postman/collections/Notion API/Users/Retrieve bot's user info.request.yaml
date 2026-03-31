@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://api.notion.com/v1/users/me
+method: GET
+headers:
+  Notion-Version: "{{NOTION_VERSION}}"
+examples: ./.resources/Retrieve bot's user info.resources/examples
+order: 3000

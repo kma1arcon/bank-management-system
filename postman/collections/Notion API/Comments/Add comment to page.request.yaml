@@ -1,0 +1,23 @@
+$kind: http-request
+url: https://api.notion.com/v1/comments
+method: POST
+headers:
+  Content-Type: application/json
+  Notion-Version: "{{NOTION_VERSION}}"
+body:
+  type: text
+  content: |-
+    {
+    	"parent": {
+    		"page_id": "{{PAGE_ID}}"
+    	},
+    	"rich_text": [
+    		{
+    			"text": {
+    				"content": "Hello world"
+    			}
+    		}
+    	]
+    }
+examples: ./.resources/Add comment to page.resources/examples
+order: 2000

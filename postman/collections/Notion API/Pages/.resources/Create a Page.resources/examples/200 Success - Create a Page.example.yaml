@@ -1,0 +1,381 @@
+$kind: http-example
+request:
+  url: https://api.notion.com/v1/pages/
+  method: POST
+  headers:
+    Authorization: Bearer secret_t1CdN9S8yicG5eWLUOfhcWaOscVnFXns
+    Content-Type: application/json
+    Notion-Version: "{{NOTION_VERSION}}"
+  body:
+    type: text
+    content: >-
+      {
+          "parent": {
+              "database_id": "{{DATABASE_ID}}"
+          },
+          "properties": {
+              "Type": {
+                  "select": {
+                      "id": "f96d0d0a-5564-4a20-ab15-5f040d49759e",
+                      "name": "Article",
+                      "color": "default"
+                  }
+              },
+              "Score /5": {
+                  "select": {
+                      "id": "5c944de7-3f4b-4567-b3a1-fa2c71c540b6",
+                      "name": "⭐️⭐️⭐️⭐️⭐️",
+                      "color": "default"
+                  }
+              },
+              "Name": {
+                  "title": [
+                      {
+                          "text": {
+                              "content": "New Media Article"
+                          }
+                      }
+                  ]
+              },
+              "Status": {
+                  "select": {
+                      "id": "8c4a056e-6709-4dd1-ba58-d34d9480855a",
+                      "name": "Ready to Start",
+                      "color": "yellow"
+                  }
+              },
+              "Publisher": {
+                  "select": {
+                      "id": "01f82d08-aa1f-4884-a4e0-3bc32f909ec4",
+                      "name": "The Atlantic",
+                      "color": "red"
+                  }
+              },
+              "Publishing/Release Date": {
+                  "date": {
+                      "start": "2020-12-08T12:00:00Z",
+                      "end": null
+                  }
+              },
+              "Link": {
+                  "url": "https://www.nytimes.com/2018/10/21/opinion/who-will-teach-silicon-valley-to-be-ethical.html"
+              },
+              "Summary": {
+                  "rich_text": [
+                      {
+                          "type": "text",
+                          "text": {
+                              "content": "Some think chief ethics officers could help technology companies navigate political and social questions.",
+                              "link": null
+                          },
+                          "annotations": {
+                              "bold": false,
+                              "italic": false,
+                              "strikethrough": false,
+                              "underline": false,
+                              "code": false,
+                              "color": "default"
+                          },
+                          "plain_text": "Some think chief ethics officers could help technology companies navigate political and social questions.",
+                          "href": null
+                      }
+                  ]
+              },
+              "Read": {
+                  "checkbox": false
+              }
+          }
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: Date
+      value: Wed, 02 Mar 2022 05:24:12 GMT
+    - key: Content-Type
+      value: application/json; charset=utf-8
+    - key: Transfer-Encoding
+      value: chunked
+    - key: Connection
+      value: keep-alive
+    - key: Set-Cookie
+      value: notion_browser_id=79384a5e-4c99-4e6a-8d53-afbc7149c1da;
+        Domain=www.notion.so; Path=/; Expires=Thu, 02 Mar 2023 05:24:07 GMT;
+        Secure
+    - key: Set-Cookie
+      value: notion_check_cookie_consent=false; Domain=www.notion.so; Path=/;
+        Expires=Thu, 03 Mar 2022 05:24:07 GMT; Secure
+    - key: X-DNS-Prefetch-Control
+      value: off
+    - key: X-Frame-Options
+      value: SAMEORIGIN
+    - key: Strict-Transport-Security
+      value: max-age=5184000; includeSubDomains
+    - key: X-Download-Options
+      value: noopen
+    - key: X-Content-Type-Options
+      value: nosniff
+    - key: X-XSS-Protection
+      value: 1; mode=block
+    - key: Referrer-Policy
+      value: same-origin
+    - key: Content-Security-Policy
+      value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gist.github.com
+        https://apis.google.com https://cdn.amplitude.com
+        https://api.amplitude.com https://hkfxbbdzib.notion.so
+        https://widget.intercom.io https://js.intercomcdn.com
+        https://logs-01.loggly.com https://cdn.segment.com
+        https://analytics.pgncs.notion.so https://o324374.ingest.sentry.io
+        https://checkout.stripe.com https://js.stripe.com
+        https://embed.typeform.com https://admin.typeform.com
+        https://public.profitwell.com js.sentry-cdn.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://cdn.syndication.twimg.com; connect-src 'self'
+        https://msgstore.www.notion.so wss://msgstore.www.notion.so
+        ws://localhost:* ws://127.0.0.1:*
+        https://notion-emojis.s3-us-west-2.amazonaws.com
+        https://s3-us-west-2.amazonaws.com https://s3.us-west-2.amazonaws.com
+        https://notion-production-snapshots-2.s3.us-west-2.amazonaws.com https:
+        http: https://cdn.amplitude.com https://api.amplitude.com
+        https://hkfxbbdzib.notion.so https://api.embed.ly
+        https://js.intercomcdn.com https://api-iam.intercom.io
+        wss://nexus-websocket-a.intercom.io https://logs-01.loggly.com
+        https://cdn.segment.com https://api.segment.io
+        https://analytics.pgncs.notion.so https://api.pgncs.notion.so
+        https://o324374.ingest.sentry.io https://checkout.stripe.com
+        https://js.stripe.com https://cdn.contentful.com
+        https://preview.contentful.com https://images.ctfassets.net
+        https://www2.profitwell.com https://tracking.chilipiper.com
+        https://api.chilipiper.com https://api.unsplash.com
+        https://boards-api.greenhouse.io https://api.statuspage.io
+        https://pgncd.notion.so https://api.statsig.com; font-src 'self' data:
+        https://cdnjs.cloudflare.com https://js.intercomcdn.com; img-src 'self'
+        data: blob: https: https://platform.twitter.com
+        https://syndication.twitter.com https://pbs.twimg.com
+        https://ton.twimg.com; style-src 'self' 'unsafe-inline'
+        https://cdnjs.cloudflare.com https://github.githubassets.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://ton.twimg.com; frame-src https: http:; media-src https: http:"
+    - key: X-Content-Security-Policy
+      value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gist.github.com
+        https://apis.google.com https://cdn.amplitude.com
+        https://api.amplitude.com https://hkfxbbdzib.notion.so
+        https://widget.intercom.io https://js.intercomcdn.com
+        https://logs-01.loggly.com https://cdn.segment.com
+        https://analytics.pgncs.notion.so https://o324374.ingest.sentry.io
+        https://checkout.stripe.com https://js.stripe.com
+        https://embed.typeform.com https://admin.typeform.com
+        https://public.profitwell.com js.sentry-cdn.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://cdn.syndication.twimg.com; connect-src 'self'
+        https://msgstore.www.notion.so wss://msgstore.www.notion.so
+        ws://localhost:* ws://127.0.0.1:*
+        https://notion-emojis.s3-us-west-2.amazonaws.com
+        https://s3-us-west-2.amazonaws.com https://s3.us-west-2.amazonaws.com
+        https://notion-production-snapshots-2.s3.us-west-2.amazonaws.com https:
+        http: https://cdn.amplitude.com https://api.amplitude.com
+        https://hkfxbbdzib.notion.so https://api.embed.ly
+        https://js.intercomcdn.com https://api-iam.intercom.io
+        wss://nexus-websocket-a.intercom.io https://logs-01.loggly.com
+        https://cdn.segment.com https://api.segment.io
+        https://analytics.pgncs.notion.so https://api.pgncs.notion.so
+        https://o324374.ingest.sentry.io https://checkout.stripe.com
+        https://js.stripe.com https://cdn.contentful.com
+        https://preview.contentful.com https://images.ctfassets.net
+        https://www2.profitwell.com https://tracking.chilipiper.com
+        https://api.chilipiper.com https://api.unsplash.com
+        https://boards-api.greenhouse.io https://api.statuspage.io
+        https://pgncd.notion.so https://api.statsig.com; font-src 'self' data:
+        https://cdnjs.cloudflare.com https://js.intercomcdn.com; img-src 'self'
+        data: blob: https: https://platform.twitter.com
+        https://syndication.twitter.com https://pbs.twimg.com
+        https://ton.twimg.com; style-src 'self' 'unsafe-inline'
+        https://cdnjs.cloudflare.com https://github.githubassets.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://ton.twimg.com; frame-src https: http:; media-src https: http:"
+    - key: X-WebKit-CSP
+      value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gist.github.com
+        https://apis.google.com https://cdn.amplitude.com
+        https://api.amplitude.com https://hkfxbbdzib.notion.so
+        https://widget.intercom.io https://js.intercomcdn.com
+        https://logs-01.loggly.com https://cdn.segment.com
+        https://analytics.pgncs.notion.so https://o324374.ingest.sentry.io
+        https://checkout.stripe.com https://js.stripe.com
+        https://embed.typeform.com https://admin.typeform.com
+        https://public.profitwell.com js.sentry-cdn.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://cdn.syndication.twimg.com; connect-src 'self'
+        https://msgstore.www.notion.so wss://msgstore.www.notion.so
+        ws://localhost:* ws://127.0.0.1:*
+        https://notion-emojis.s3-us-west-2.amazonaws.com
+        https://s3-us-west-2.amazonaws.com https://s3.us-west-2.amazonaws.com
+        https://notion-production-snapshots-2.s3.us-west-2.amazonaws.com https:
+        http: https://cdn.amplitude.com https://api.amplitude.com
+        https://hkfxbbdzib.notion.so https://api.embed.ly
+        https://js.intercomcdn.com https://api-iam.intercom.io
+        wss://nexus-websocket-a.intercom.io https://logs-01.loggly.com
+        https://cdn.segment.com https://api.segment.io
+        https://analytics.pgncs.notion.so https://api.pgncs.notion.so
+        https://o324374.ingest.sentry.io https://checkout.stripe.com
+        https://js.stripe.com https://cdn.contentful.com
+        https://preview.contentful.com https://images.ctfassets.net
+        https://www2.profitwell.com https://tracking.chilipiper.com
+        https://api.chilipiper.com https://api.unsplash.com
+        https://boards-api.greenhouse.io https://api.statuspage.io
+        https://pgncd.notion.so https://api.statsig.com; font-src 'self' data:
+        https://cdnjs.cloudflare.com https://js.intercomcdn.com; img-src 'self'
+        data: blob: https: https://platform.twitter.com
+        https://syndication.twitter.com https://pbs.twimg.com
+        https://ton.twimg.com; style-src 'self' 'unsafe-inline'
+        https://cdnjs.cloudflare.com https://github.githubassets.com
+        https://js.chilipiper.com https://platform.twitter.com
+        https://ton.twimg.com; frame-src https: http:; media-src https: http:"
+    - key: ETag
+      value: W/"8a3-Iu9RiTdka3wFzKVnnkh97CbH+l4"
+    - key: Vary
+      value: Accept-Encoding
+    - key: Content-Encoding
+      value: gzip
+    - key: CF-Cache-Status
+      value: DYNAMIC
+    - key: Expect-CT
+      value: max-age=604800,
+        report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+    - key: Server
+      value: cloudflare
+    - key: CF-RAY
+      value: 6e57b44639065a7b-IAD
+  body:
+    type: json
+    content: >-
+      {
+          "object": "page",
+          "id": "f3a1f364-6ca1-41d2-8986-552ae37c1bdf",
+          "created_time": "2022-03-02T05:24:00.000Z",
+          "last_edited_time": "2022-03-02T05:24:00.000Z",
+          "created_by": {
+              "object": "user",
+              "id": "92a680bb-6970-4726-952b-4f4c03bff617"
+          },
+          "last_edited_by": {
+              "object": "user",
+              "id": "92a680bb-6970-4726-952b-4f4c03bff617"
+          },
+          "cover": null,
+          "icon": null,
+          "parent": {
+              "type": "database_id",
+              "database_id": "8e2c2b76-9e1d-47d2-87b9-ed3035d607ae"
+          },
+          "archived": false,
+          "properties": {
+              "Score /5": {
+                  "id": ")Y7%22",
+                  "type": "select",
+                  "select": {
+                      "id": "5c944de7-3f4b-4567-b3a1-fa2c71c540b6",
+                      "name": "⭐️⭐️⭐️⭐️⭐️",
+                      "color": "default"
+                  }
+              },
+              "Type": {
+                  "id": "%2F7eo",
+                  "type": "select",
+                  "select": {
+                      "id": "f96d0d0a-5564-4a20-ab15-5f040d49759e",
+                      "name": "Article",
+                      "color": "default"
+                  }
+              },
+              "Publisher": {
+                  "id": "%3E%24Pb",
+                  "type": "select",
+                  "select": {
+                      "id": "01f82d08-aa1f-4884-a4e0-3bc32f909ec4",
+                      "name": "The Atlantic",
+                      "color": "red"
+                  }
+              },
+              "Summary": {
+                  "id": "%3F%5C25",
+                  "type": "rich_text",
+                  "rich_text": [
+                      {
+                          "type": "text",
+                          "text": {
+                              "content": "Some think chief ethics officers could help technology companies navigate political and social questions.",
+                              "link": null
+                          },
+                          "annotations": {
+                              "bold": false,
+                              "italic": false,
+                              "strikethrough": false,
+                              "underline": false,
+                              "code": false,
+                              "color": "default"
+                          },
+                          "plain_text": "Some think chief ethics officers could help technology companies navigate political and social questions.",
+                          "href": null
+                      }
+                  ]
+              },
+              "Publishing/Release Date": {
+                  "id": "%3Fex%2B",
+                  "type": "date",
+                  "date": {
+                      "start": "2020-12-08T12:00:00.000+00:00",
+                      "end": null,
+                      "time_zone": null
+                  }
+              },
+              "Link": {
+                  "id": "VVMi",
+                  "type": "url",
+                  "url": "https://www.nytimes.com/2018/10/21/opinion/who-will-teach-silicon-valley-to-be-ethical.html"
+              },
+              "Read": {
+                  "id": "_MWJ",
+                  "type": "checkbox",
+                  "checkbox": false
+              },
+              "Status": {
+                  "id": "%60zz5",
+                  "type": "select",
+                  "select": {
+                      "id": "8c4a056e-6709-4dd1-ba58-d34d9480855a",
+                      "name": "Ready to Start",
+                      "color": "yellow"
+                  }
+              },
+              "Author": {
+                  "id": "qNw_",
+                  "type": "multi_select",
+                  "multi_select": []
+              },
+              "Name": {
+                  "id": "title",
+                  "type": "title",
+                  "title": [
+                      {
+                          "type": "text",
+                          "text": {
+                              "content": "New Media Article",
+                              "link": null
+                          },
+                          "annotations": {
+                              "bold": false,
+                              "italic": false,
+                              "strikethrough": false,
+                              "underline": false,
+                              "code": false,
+                              "color": "default"
+                          },
+                          "plain_text": "New Media Article",
+                          "href": null
+                      }
+                  ]
+              }
+          },
+          "url": "https://www.notion.so/New-Media-Article-f3a1f3646ca141d28986552ae37c1bdf"
+      }
+order: 1000

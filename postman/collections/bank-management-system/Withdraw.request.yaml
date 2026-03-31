@@ -1,0 +1,14 @@
+$kind: http-request
+name: Withdraw
+method: POST
+url: '{{baseUrl}}/withdraw'
+order: 5000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "amount": 200
+    }

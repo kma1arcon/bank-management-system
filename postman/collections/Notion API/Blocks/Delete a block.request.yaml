@@ -1,0 +1,9 @@
+$kind: http-request
+url: https://api.notion.com/v1/blocks/:id
+method: DELETE
+headers:
+  Notion-Version: "{{NOTION_VERSION}}"
+pathVariables:
+  id: "{{BLOCK_ID}}"
+examples: ./.resources/Delete a block.resources/examples
+order: 5000
