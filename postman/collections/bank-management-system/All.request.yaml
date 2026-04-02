@@ -1,7 +1,7 @@
 $kind: http-request
-name: Withdraw
+name: All
 method: POST
-url: '{{baseUrl}}/withdraw'
+url: "{{baseUrl}}/withdraw"
 order: 5000
 headers:
   - key: Content-Type
