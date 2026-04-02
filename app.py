@@ -88,7 +88,7 @@ def withdraw(account_id):
     except:
         return jsonify({"error": "Invalid amount"}), 400
 
-    result = account.deposit(amount)
+    result = account.withraw(amount)
 
     if isinstance(result, str):
         return jsonify({"error": result}), 400
